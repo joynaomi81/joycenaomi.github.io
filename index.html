@@ -3,37 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Website</title>
+  <title>Olusanya Joy | Portfolio</title>
   <style>
     body {
-      background-color: blue; /* Background color */
-      color: white; /* Text color */
-      font-family: Arial, sans-serif;
-      text-align: center;
       margin: 0;
-      padding: 50px;
+      font-family: Arial, sans-serif;
+      background-color: #007BFF; /* Blue background */
+      color: white;
+      line-height: 1.6;
     }
-    img {
-      width: 200px;  /* Adjust picture size */
-      height: 200px;
-      border-radius: 50%; /* Makes it circular */
+    header {
+      text-align: center;
+      padding: 40px;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
       border: 4px solid white;
     }
-    h1 {
-      margin-top: 20px;
-      font-size: 2.5em;
+    header h1 {
+      margin: 20px 0 10px;
     }
-    p {
-      font-size: 1.2em;
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: yellow;
+      font-weight: bold;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: rgba(255,255,255,0.1);
+      margin-bottom: 30px;
+      border-radius: 10px;
+    }
+    h2 {
+      border-bottom: 2px solid white;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.3);
+    }
+    a {
+      color: yellow;
     }
   </style>
 </head>
 <body>
-  <!-- Profile Picture -->
-  <img src="profile.jpg" alt="My Picture">
+  <header>
+    <img src="profile.jpg" alt="Profile Picture">
+    <h1>Olusanya Joy</h1>
+    <p>AI Developer | Machine Learning Engineer | NLP Researcher</p>
+    <p><a href="mailto:joynaomi81@gmail.com">joynaomi81@gmail.com</a> | 
+       <a href="https://www.linkedin.com/in/olusanya-joy-209340206/" target="_blank">LinkedIn</a> | 
+       <a href="https://github.com/joynaomi81" target="_blank">GitHub</a> | 
+       <a href="https://x.com/Naomi_Joy___" target="_blank">Twitter</a>
+    </p>
+  </header>
 
-  <!-- Website Content -->
-  <h1>Welcome to My Website</h1>
-  <p>Hello! I'm Joy, and this is my personal website on GitHub Pages 💙.</p>
+  <nav>
+    <a href="#career">Career</a>
+    <a href="#experience">Experience</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#volunteer">Volunteer</a>
+    <a href="#certs">Certifications</a>
+  </nav>
+
+  <section id="career">
+    <h2>Career Summary</h2>
+    <p>I am a passionate AI Developer and Machine Learning Engineer who loves exploring the potential of Natural Language Processing and Large Language Models...</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Atom Group (AI/LLM Developer, Apr 2025 – Present)</strong> – Developed AI agent with Instagram scraping pipelines, reduced failure rates by 70%, etc.</li>
+      <li><strong>FriendnPal (AI Developer, Jan 2023 – Mar 2025)</strong> – Built mental health chatbot with RAG pipeline, improved engagement by 80%...</li>
+      <li><strong>Kwame AI / Brilla AI Project</strong> – Multilingual ASR models, dataset validation, reproducible workflows...</li>
+      <!-- You can keep adding other roles from your CV -->
+    </ul>
+  </section>
+
+  <section id="leadership">
+    <h2>Leadership Experience</h2>
+    <p>Deep Learning Co-Lead @ Data Science Nigeria OAU, AI Lead @ Women in Data Science Ile-Ife...</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="https://github.com/joynaomi81/English-French-Machine-Translation-Project">English–French Machine Translation</a> – Evaluated MBart model with BLEU/ROUGE/METEOR.</li>
+      <li><a href="https://github.com/joynaomi81/conversational-ai-bot">AskMyPDF – Conversational Document Assistant</a> | <a href="https://conversational-ai-bot-s7r9n85wbfkjfnedn86jtq.streamlit.app/">Demo</a></li>
+      <li><a href="https://github.com/joynaomi81/Automatic-Essay-Scoring-AES-/tree/main">Automatic Essay Scoring</a></li>
+      <li><a href="https://github.com/joynaomi81/Fake-News-Detection">Fake News Detection</a> | <a href="https://fake-news-detection-5bgqbigfyxhkf6kuenpf2b.streamlit.app/">Demo</a></li>
+      <!-- Add other projects -->
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>Python, Julia, TensorFlow, PyTorch, Hugging Face, Streamlit, FastAPI, Flask, SQL, NLP, Deep Learning, Docker, Git, etc.</p>
+  </section>
+
+  <section id="volunteer">
+    <h2>Volunteer Experience</h2>
+    <ul>
+      <li>Django Girls (Coach)</li>
+      <li>She Code Africa OAU (Protocol Assistant)</li>
+      <li>LevelUp Techies Bootcamp (AI Mentor)</li>
+      <li>DSN OAU (Deep Learning/AI Tutor)</li>
+    </ul>
+  </section>
+
+  <section id="certs">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Udemy: Natural Language Processing in Python for Beginners (2024)</li>
+      <li>Coursera: Data Science Fundamentals (2024)</li>
+      <li>Endangered Languages Project: Language Documentation Webinar (2024)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Olusanya Joy | Built with 💙 on GitHub Pages</p>
+  </footer>
 </body>
 </html>
