@@ -8,57 +8,73 @@
     body {
       margin: 0;
       font-family: "Georgia", "Times New Roman", serif;
-      background: #121212; /* Black background */
-      color: #f5f5f5; /* Light text */
+      color: #f9f9f9;
+      background: #111; /* black background */
       line-height: 1.6;
+      display: flex;
     }
-    header {
-      text-align: center;
+    /* Sidebar */
+    .sidebar {
+      width: 280px;
+      background: #000;
+      color: #fff;
       padding: 40px 20px;
-      background: #e91e63; /* Pink header */
-      color: white;
+      position: fixed;
+      height: 100vh;
+      overflow-y: auto;
+      text-align: center;
+      border-right: 2px solid #ff4da6; /* pink accent */
     }
-    header img {
-      width: 150px;
-      height: 150px;
+    .sidebar img {
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
-      border: 3px solid white;
+      border: 3px solid #ff4da6;
     }
-    header h1 {
-      margin: 20px 0 5px;
-      font-size: 2.5em;
+    .sidebar h1 {
+      font-size: 1.8em;
+      margin: 20px 0 10px;
+      color: #ff4da6;
     }
-    header p {
+    .sidebar p {
+      font-size: 1em;
       margin: 5px 0;
-      font-size: 1.1em;
+    }
+    .sidebar a {
+      color: #ff4da6;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
     }
     nav {
-      background: #880e4f; /* Dark pink/navy mix */
-      padding: 10px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      margin-top: 20px;
     }
     nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+      color: #fff;
       font-weight: bold;
     }
     nav a:hover {
-      color: #f48fb1; /* lighter pink on hover */
+      color: #ff4da6;
+    }
+
+    /* Main content */
+    .content {
+      margin-left: 300px;
+      padding: 40px;
+      max-width: 900px;
     }
     section {
-      max-width: 900px;
-      margin: 40px auto;
+      margin-bottom: 60px;
+      background: #1a1a1a;
       padding: 20px;
-      background: #1e1e1e; /* dark card background */
       border-radius: 6px;
-      box-shadow: 0 1px 6px rgba(0,0,0,0.4);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
     }
     h2 {
-      color: #e91e63;
+      color: #ff4da6;
       border-bottom: 2px solid #333;
       padding-bottom: 5px;
       margin-bottom: 15px;
@@ -66,165 +82,118 @@
     ul {
       padding-left: 20px;
     }
-    pre {
-      background: #2a2a2a;
-      padding: 10px;
-      border-radius: 6px;
-      font-size: 0.85em;
-      overflow-x: auto;
-      color: #f48fb1; /* pink text */
+    a {
+      color: #ff4da6;
     }
     footer {
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
-      background: #1e1e1e;
-      margin-top: 40px;
-      color: #bbb;
-    }
-    a {
-      color: #f48fb1;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <!-- Sidebar -->
+  <div class="sidebar">
     <img src="profile.jpg" alt="Olusanya Joy">
     <h1>Olusanya Joy</h1>
-    <p>AI/ML Developer • NLP Researcher • Linguistics Graduate (OAU)</p>
-    <p><a href="mailto:joynaomi81@gmail.com" style="color:white;">joynaomi81@gmail.com</a></p>
-  </header>
+    <p>AI/ML Developer <br> NLP Researcher <br> Linguistics Graduate (OAU)</p>
+    <p><a href="mailto:joynaomi81@gmail.com">joynaomi81@gmail.com</a></p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#talks">Talks</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#awards">Awards</a>
+      <a href="#memberships">Memberships</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#news">News</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#projects">Projects</a>
-    <a href="#talks">Talks</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#awards">Awards</a>
-    <a href="#memberships">Memberships</a>
-    <a href="#cv">CV</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- Main Content -->
+  <div class="content">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a graduate of Linguistics & African Languages from Obafemi Awolowo University. 
+      My research interests include <strong>Natural Language Processing (NLP)</strong>, 
+      <strong>Automatic Speech Recognition (ASR)</strong>, and <strong>Large Language Models (LLMs)</strong>. 
+      I focus on building AI systems for low-resource African languages, with applications in healthcare and education.</p>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a graduate of Linguistics & African Languages from Obafemi Awolowo University. 
-       My research interests include <strong>Natural Language Processing (NLP)</strong>, 
-       <strong>Automatic Speech Recognition (ASR)</strong>, and <strong>Large Language Models (LLMs)</strong>. 
-       I focus on building AI systems for low-resource African languages, with applications in healthcare and education.</p>
-  </section>
+    <section id="news">
+      <h2>News</h2>
+      <ul>
+        <li>Aug 2025 – Selected for <strong>AfricaNLP Mentorship Program</strong> (ACL 2025).</li>
+        <li>Jul 2025 – Presented poster at <strong>Deep Learning Indaba 2025</strong>, Kigali, Rwanda.</li>
+        <li>Mar 2025 – Co-organized Deep Learning Bootcamp @ <strong>DSN OAU</strong>.</li>
+      </ul>
+    </section>
 
-  <section id="news">
-    <h2>News</h2>
-    <ul>
-      <li>Aug 2025 – Selected for <strong>AfricaNLP Mentorship Program</strong> (ACL 2025).</li>
-      <li>Jul 2025 – Presented poster at <strong>Deep Learning Indaba 2025</strong>, Kigali, Rwanda.</li>
-      <li>Mar 2025 – Co-organized Deep Learning Bootcamp @ <strong>DSN OAU</strong>.</li>
-    </ul>
-  </section>
+    <section id="research">
+      <h2>Research</h2>
+      <ul>
+        <li>Automatic Speech Recognition for tonal languages (Yoruba ASR thesis).</li>
+        <li>Proverb classification and semantic analysis in African languages.</li>
+        <li>Sentiment analysis for mental health prediction.</li>
+        <li>Multilingual chatbots and machine translation.</li>
+      </ul>
+    </section>
 
-  <section id="research">
-    <h2>Research</h2>
-    <ul>
-      <li>Automatic Speech Recognition for tonal languages (Yoruba ASR thesis).</li>
-      <li>Proverb classification and semantic analysis in African languages.</li>
-      <li>Sentiment analysis for mental health prediction.</li>
-      <li>Multilingual chatbots and machine translation.</li>
-    </ul>
-  </section>
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul>
+        <li><strong>Olusanya Joy</strong> & Abolade, Daud (2025). ÒWE-YOR: Leveraging Transformer-Based Models for Yoruba Proverb Classification. Poster presented at Deep Learning Indaba 2025, Kigali, Rwanda.</li>
+        <li><strong>Olusanya Joy</strong> (2025). Tone in Yoruba Automatic Speech Recognition. Undergraduate Thesis, OAU.</li>
+      </ul>
+    </section>
 
-  <section id="publications">
-    <h2>Publications</h2>
-    <ul>
-      <li><strong>Olusanya Joy</strong> & Abolade, Daud (2025). ÒWE-YOR: Leveraging Transformer-Based Models for Yoruba Proverb Classification. Poster presented at Deep Learning Indaba 2025, Kigali, Rwanda.</li>
-      <li><strong>Olusanya Joy</strong> (2025). Tone in Yoruba Automatic Speech Recognition. Undergraduate Thesis, OAU.</li>
-    </ul>
-    <h3>BibTeX Example</h3>
-    <pre>
-@inproceedings{olusanya2025oweyor,
-  title={ÒWE-YOR: Leveraging Transformer-Based Models for Yoruba Proverb Classification},
-  author={Olusanya, Joy and Abolade, Daud},
-  booktitle={Deep Learning Indaba},
-  year={2025}
-}
-    </pre>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="https://github.com/joynaomi81/English-French-Machine-Translation-Project">English–French Machine Translation</a></li>
+        <li><a href="https://github.com/joynaomi81/conversational-ai-bot">AskMyPDF – Conversational Document Assistant</a></li>
+        <li><a href="https://github.com/joynaomi81/Automatic-Essay-Scoring-AES-">Automatic Essay Scoring</a></li>
+        <li><a href="https://github.com/joynaomi81/Fake-News-Detection">Fake News Detection</a></li>
+      </ul>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/joynaomi81/English-French-Machine-Translation-Project">English–French Machine Translation</a></li>
-      <li><a href="https://github.com/joynaomi81/conversational-ai-bot">AskMyPDF – Conversational Document Assistant</a></li>
-      <li><a href="https://github.com/joynaomi81/Automatic-Essay-Scoring-AES-">Automatic Essay Scoring</a></li>
-      <li><a href="https://github.com/joynaomi81/Fake-News-Detection">Fake News Detection</a></li>
-    </ul>
-  </section>
+    <section id="awards">
+      <h2>Awards & Fellowships</h2>
+      <ul>
+        <li><strong>Best Poster Award</strong> — Deep Learning Indaba 2025, Kigali, Rwanda.</li>
+        <li>AfricaNLP 2025 — Research Mentorship Program (ACL).</li>
+        <li>
+          <strong>Olusanya Joy</strong> and <strong>Daud Abolade</strong>. (2025). 
+          ÒWE-YOR: Leveraging Transformer-Based Models for Yoruba Proverb Classification. 
+          <em>Best Poster</em> presented at <em>Deep Learning Indaba 2025</em>, Kigali, Rwanda. 
+          [<a href="https://drive.google.com/file/d/1ll9bxDTLmp9ZgXZTFo0JVPvXOGi4TO6a/view?usp=drive_link" target="_blank">View Poster</a>]
+        </li>
+      </ul>
+    </section>
 
-  <section id="talks">
-    <h2>Talks & Presentations</h2>
-    <ul>
-      <li>"ÒWE-YOR: Yoruba Proverb Classification" — Poster at Indaba 2025, Kigali.</li>
-      <li>"Tone in Yoruba ASR" — Undergraduate Thesis Presentation, OAU.</li>
-    </ul>
-  </section>
+    <section id="cv">
+      <h2>Curriculum Vitae</h2>
+      <p>You can download my full CV <a href="JOY_NAOMI_OLUSANYA_CV.pdf" target="_blank">here (PDF)</a>.</p>
+    </section>
 
-  <section id="teaching">
-    <h2>Teaching & Mentorship</h2>
-    <ul>
-      <li>Deep Learning Co-Lead @ Data Science Nigeria (OAU).</li>
-      <li>AI/ML Lead @ Women in Data Science Ile-Ife.</li>
-      <li>AI Mentor @ LevelUp Techies Bootcamp.</li>
-    </ul>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:joynaomi81@gmail.com">joynaomi81@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/joynaomi81">github.com/joynaomi81</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/olusanya-joy-209340206/">linkedin.com/in/olusanya-joy</a></p>
+      <p>Twitter: <a href="https://x.com/Naomi_Joy___">@Naomi_Joy___</a></p>
+    </section>
 
-  <section id="awards">
-    <h2>Awards & Fellowships</h2>
-    <ul>
-      <li>Deep Learning Indaba 2025 — Poster Presentation.</li>
-      <li>AfricaNLP 2025 — Research Mentorship Program (ACL).</li>
-      <strong>Olusanya Joy</strong> and <strong>Daud Abolade</strong>. (2025). 
-       <strong>Olusanya Joy</strong> and <strong>Daud Abolade</strong>. (2025). 
-      ÒWE-YOR: Leveraging Transformer-Based Models for Yoruba Proverb Classification. 
-      <em>Best Poster</em> presented at <em>Deep Learning Indaba 2025</em>, Kigali, Rwanda. 
-      [<a href="https://drive.google.com/file/d/1ll9bxDTLmp9ZgXZTFo0JVPvXOGi4TO6a/view?usp=drive_link" target="_blank">View Poster</a>]
-    </li>
-  </ul>
-</section>
-    
-  <section id="memberships">
-    <h2>Memberships</h2>
-    <ul>
-      <li>Masakhane NLP</li>
-      <li>She Code Africa</li>
-      <li>Data Science Nigeria</li>
-      <li>Cohere for AI</li>
-      <li>AfriClimate AI</li>
-    </ul>
-  </section>
+    <footer>
+      &copy; 2025 Olusanya Joy — Academic Portfolio Website
+    </footer>
+  </div>
 
-  <section id="cv">
-    <h2>Curriculum Vitae</h2>
-    <p>You can download my full CV <a href="JOY_NAOMI_OLUSANYA_CV.pdf" target="_blank">here (PDF)</a>.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:joynaomi81@gmail.com">joynaomi81@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/joynaomi81">github.com/joynaomi81</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/olusanya-joy-209340206/">linkedin.com/in/olusanya-joy</a></p>
-    <p>Twitter: <a href="https://x.com/Naomi_Joy___">@Naomi_Joy___</a></p>
-  </section>
-
-  <footer>
-    &copy; 2025 Olusanya Joy — Academic Portfolio Website
-  </footer>
 </body>
 </html>
